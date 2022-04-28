@@ -1,0 +1,125 @@
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;
+}
+
+  
+.master{
+    min-height: 92vh;
+    height: 100%;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.362);
+    border-left: 1px solid rgba(0, 0, 0, 0.362);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}   
+
+#send-container{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px ;
+    background-color: #FFA1A1;
+}
+
+
+#send-container input{
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    font-size: 0.9rem;
+    outline: none;
+    border-radius: 50px;
+    background-color: #ffcbcb;
+}
+
+
+#send-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    margin: 0px 0px 0px 10px;
+    border: none ;
+    font-size: 0.9rem;
+    background-color: #ffcbcb;
+    transition: all 0.3s ease;
+    color: rgba(128, 128, 128, 0.848);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#send-container button i{
+    font-size: 0.9rem;
+    background-color: #ffcbcb;
+    transition: all 0.3s ease;
+    color: rgba(128, 128, 128, 0.848);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#send-container button i:hover{
+    font-size: 1.1rem;
+}
+
+
+.message-element-left{
+    margin: 5px 15px;
+    background-color: rgb(200, 247, 251);
+    width: fit-content;
+    padding: 4px 9px;
+    border-radius: 4px;
+    
+}
+
+#message-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 35px 0px;
+    
+}
+
+
+.message-element{
+    margin: 5px 15px;
+    background-color: #ffa1a184;
+    width: fit-content;
+    max-width: 40%;
+
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    
+    padding: 4px 9px; 
+    border-radius: 4px;
+    align-self: flex-end;
+}
+
+
+@media only screen and (max-width: 900px) {  
+    .master{
+        height: 100%;
+        width: 100%;
+        border: none;   
+    }
+}  
+
+
+
+
+
+
+

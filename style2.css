@@ -1,0 +1,164 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    max-width: 900px;
+    margin: 0px auto;
+  }
+  
+  .header__left{
+    height: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__left img{
+      height: 45px;
+      margin: 0px 5px;
+  }
+  
+  .header__middle{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  
+  .header__middle i{
+    font-size: 15px;
+     margin: 5px;
+    color: rgb(163, 163, 163); 
+  }
+  
+  .header__middle input{
+    padding: 4px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    /* font-weight: lighter; */
+    background-color: none;
+  }
+  
+  
+  .fa-solid{
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    padding: 0px 10px;
+  }
+  
+  .fa-message{
+    color: #FFA1A1;
+    text-decoration:underline;
+    text-underline-offset: 21px;
+  }
+  
+  
+  .header__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__right a i:hover{ 
+    color: #FFA1A1;
+  }
+  
+  
+  .header__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__info h4 {
+    margin: 0px 5px;
+  }
+  
+  .line{
+    width: 100%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+  }
+  
+  .intro-bg{
+    width: 100%;
+    height: 280px;
+  }
+  
+  .intro{
+    background-color: #FFA1A1;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .intro-name{
+    position: absolute;
+    top: 90px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px 0.5px rgb(196, 196, 196);
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px 0px 0px;
+  }
+  
+  
+  .intro-name h4{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .intro-name p{
+    text-align: center;
+     color: rgb(177, 176, 176);
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+  
+    .header__middle{
+       display: none;
+    }
+    
+    .fa-house{
+  
+      text-underline-offset: 16px;
+    }
+  
+    .intro-name h4{
+      font-size: 1.1rem;
+    }
+  
+    .intro-name p{
+      font-size: 0.9rem;
+    }
+  
+    .header__right{
+      margin-top:9px ;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .header__info h4 {
+     display: none;
+    }
+  
+  }
+
